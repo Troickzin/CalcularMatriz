@@ -86,13 +86,13 @@ int CalcularMenorMaiorMediano(int matriz[3][3], int Tipo){
 
     for (int i = 0; i < pos-1; i++) {//Loop para ordenar o vetor em ordem crescente | OBS : o pos aqui ja esta com o valor 9
 
-        for (int ii = 1; ii < pos; ii++) {
+        for (int ii = i+1; ii < pos; ii++) {
 
             /*
             
             Esse ja e mais complexo de explicar, mas eu darei o meu melhor!
 
-            ta, o segundo loop ja começa com 1 numero a frente do primeiro loop, pois se a posiçao do primeiro loop [0] ter o valor maior que a do segundo loop [1], entao eles serao trocados de lugar
+            ta, o segundo loop ja começa com i+1 pois precisa esta sempre a frente do primeiro loop, pois se a posiçao do primeiro loop [0] ter o valor maior que a do segundo loop [1], entao eles serao trocados de lugar
             usando uma variavel temporaria, na qual vai armazenar a informaçao da variavel do primeiro loop, essa variavel vai ser substituida pela do segundo loop, e logo apos a do segundo loop sera substituida
             pelo valor que esta na variavel temporaria, exemplo
 
@@ -151,6 +151,8 @@ int CalcularMenorMaiorMediano(int matriz[3][3], int Tipo){
     Menor = MedianoTemp[0];
     Maior = MedianoTemp[pos-1];
     Mediano = MedianoTemp[pos/2];
+
+    printf("%d, %d, %d, %d\n", MedianoTemp[0], MedianoTemp[1], MedianoTemp[2], MedianoTemp[3]);
 
 };
 
