@@ -152,8 +152,6 @@ int CalcularMenorMaiorMediano(int matriz[3][3], int Tipo){
     Maior = MedianoTemp[pos-1];
     Mediano = MedianoTemp[pos/2];
 
-    printf("%d, %d, %d, %d\n", MedianoTemp[0], MedianoTemp[1], MedianoTemp[2], MedianoTemp[3]);
-
 };
 
 // Requisiçoes
