@@ -218,7 +218,7 @@ int Requisicao3x3(){
 
     system("cls");
     printf("Linha 1 [%d] [*] [0]\n",Matriz[0][0]); 
-    printf("Linha 1 [0] [0] [0]\n");
+    printf("Linha 2 [0] [0] [0]\n");
     printf("Linha 3 [0] [0] [0]\n");
     scanf("%i", &Matriz[0][1]);
 
@@ -299,6 +299,15 @@ int main() {
     {
         Requisicao3x3();
     }
+
+    char restart;
+
+    printf("Deseja recomeçar? s[sim] n[nao]\n");
+    scanf(" %c", &restart);
+
+    if (restart == 's' || restart == 'S') {
+        main();
+    };
 
     return 0;
 
