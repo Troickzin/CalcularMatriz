@@ -71,7 +71,7 @@ int CalcularMenorMaiorMediano(int matriz[3][3], int Tipo){
     int MedianoTemp[9], pos = 0;
 
     /*
-    
+
     Aqui criamos duas variaveis, a primeira e um vetor temporario para ordenar a matriz em ordem crescente, a segunda e a posiçao desse vetor
 
     */
@@ -109,22 +109,8 @@ int CalcularMenorMaiorMediano(int matriz[3][3], int Tipo){
 
             ficando assim: vetor[4] = 3, 10, 7, 5
 
-            e ai ele faz o segundo loop avançar:
-
-
-            lembrando que o vetor foi modificado ficando: (3, 10, 7, 5)
-
-            vetor[1] (10) > vetor[2] (7) entao
-            {
-
-            temp = vetor[1]; (10)
-            vetor[1] = vetor[2]; (7)
-            vetor[2] = temp; (10)
-
-            }
-
-            ficando assim: vetor[4] = 3, 7, 10, 5
-
+            e ai ele faz o segundo loop avançar
+            
             */
 
             if (MedianoTemp[i] > MedianoTemp[ii]) {
